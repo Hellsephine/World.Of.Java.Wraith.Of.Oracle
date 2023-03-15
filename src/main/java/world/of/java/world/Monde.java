@@ -74,7 +74,7 @@ public class Monde {
             monstres.isAlive();
         }
 
-        return false;
+        return true;
     }
 
 }

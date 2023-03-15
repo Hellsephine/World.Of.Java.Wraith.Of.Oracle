@@ -4,30 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01944787-e1a1-49e5-9937-4625369e0436" name="Changes" comment="Ajout du projet">
+    <list default="true" id="01944787-e1a1-49e5-9937-4625369e0436" name="Changes" comment="Ajout de la gestion du mouvement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Combat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Sleep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/ArmeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/ArmeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/BouclierFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/BouclierFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/MonstreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/MonstreFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/NourritureFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/NourritureFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/PersonnageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/PersonnageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/map/Coordonnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/map/Coordonnes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Armes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Armes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Bouclier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Bouclier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Nourriture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Nourriture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Sac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Sac.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Combattant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Combattant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Equipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/ICombattants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/ICombattants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Monde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monstre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Monstre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Personnage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Point2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/of/java/factory/MonstreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/MonstreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world/of/java/factory/PersonnageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/PersonnageFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +62,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.world.of.java.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="world_of_java.Main" />
       <module name="World_Of_Java_Wrath_Of_Oracle" />
@@ -96,8 +76,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="world.of.java.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="world.of.java.Main" />
+      <module name="World_Of_Java_Wrath_Of_Oracle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="world.of.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.world.of.java.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -112,7 +106,7 @@
       <updated>1673531185801</updated>
       <workItem from="1673531187109" duration="19900000" />
       <workItem from="1674834863098" duration="117000" />
-      <workItem from="1678697763521" duration="54464000" />
+      <workItem from="1678697763521" duration="54819000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout du projet">
       <created>1678883939980</created>
@@ -121,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678883939980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Ajout de la gestion du mouvement">
+      <created>1678895752631</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678895752631</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +141,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ajout du projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du projet" />
+    <MESSAGE value="Ajout de la gestion du mouvement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la gestion du mouvement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,8 +17,8 @@ public class MonstreFactory {
                 +monstreNom[new Random().nextInt(monstreNom.length)];
         Integer force = new Random().nextInt(5,11);
         Integer pdv = new Random().nextInt(50,101);
-        int xRandom = new Random().nextInt(0,11);
-        int yRandom = new Random().nextInt(0,11);
+        int xRandom = new Random().nextInt(0,10);
+        int yRandom = new Random().nextInt(0,10);
         Coordonnes coordonne = new Coordonnes(xRandom, yRandom);
 
         return new Monstre(pdv,nom,force, 100,pdv, coordonne);
