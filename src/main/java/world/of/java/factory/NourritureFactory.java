@@ -1,9 +1,6 @@
-package world_of_java.factory;
+package world.of.java.factory;
 
-import world_of_java.objets.Armes;
-import world_of_java.objets.Nourriture;
-
-import java.util.Random;
+import world.of.java.objets.Nourriture;
 
 public class NourritureFactory {
     public static Nourriture buildNourriture() {

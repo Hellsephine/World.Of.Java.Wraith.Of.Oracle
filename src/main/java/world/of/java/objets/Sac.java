@@ -1,4 +1,4 @@
-package world_of_java.objets;
+package world.of.java.objets;
 
 import java.util.ArrayList;
 import java.util.List;

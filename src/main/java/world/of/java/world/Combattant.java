@@ -1,8 +1,8 @@
-package world_of_java.world;
+package world.of.java.world;
 
-import world_of_java.map.Coordonnes;
-import world_of_java.objets.Nourriture;
-import world_of_java.objets.Sac;
+import world.of.java.map.Coordonnes;
+import world.of.java.objets.Nourriture;
+import world.of.java.objets.Sac;
 
 public abstract class Combattant implements ICombattants {
 

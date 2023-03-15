@@ -1,8 +1,8 @@
-package world_of_java.world;
+package world.of.java.world;
 
-import world_of_java.map.Coordonnes;
-import world_of_java.objets.Armes;
-import world_of_java.objets.Bouclier;
+import world.of.java.map.Coordonnes;
+import world.of.java.objets.Armes;
+import world.of.java.objets.Bouclier;
 
 public class Monstre extends Combattant {
 

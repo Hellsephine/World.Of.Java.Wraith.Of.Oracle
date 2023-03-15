@@ -1,6 +1,4 @@
-package world_of_java.objets;
-
-import world_of_java.objets.Items;
+package world.of.java.objets;
 
 public class Nourriture implements Items {
 

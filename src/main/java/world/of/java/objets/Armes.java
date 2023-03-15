@@ -1,4 +1,4 @@
-package world_of_java.objets;
+package world.of.java.objets;
 
 public class Armes implements Items {
 

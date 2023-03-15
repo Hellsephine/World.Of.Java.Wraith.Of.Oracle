@@ -1,8 +1,9 @@
-package world_of_java.world;
+package world.of.java.world;
 
-import world_of_java.objets.Armes;
-import world_of_java.objets.Bouclier;
-import world_of_java.objets.Sac;
+import world.of.java.map.Coordonnes;
+import world.of.java.objets.Armes;
+import world.of.java.objets.Sac;
+import world.of.java.objets.Bouclier;
 
 public interface ICombattants {
 
@@ -26,6 +27,7 @@ public interface ICombattants {
     public void manger();
     public void perdreEnduranceAttaque();
     public void perdreEnduranceDefence();
-
+    public Coordonnes getCoordonnes();
+    public void setCoordonnes(Coordonnes coordonnes);
 
 }

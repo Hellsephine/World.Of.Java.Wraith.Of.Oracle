@@ -1,6 +1,6 @@
-package world_of_java.factory;
+package world.of.java.factory;
 
-import world_of_java.objets.Armes;
+import world.of.java.objets.Armes;
 
 import java.util.Random;
 

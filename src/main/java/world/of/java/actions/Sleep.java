@@ -1,6 +1,6 @@
-package world_of_java.actions;
+package world.of.java.actions;
 
-import world_of_java.world.ICombattants;
+import world.of.java.world.ICombattants;
 
 public class Sleep {
     public static void heal(ICombattants combattants){

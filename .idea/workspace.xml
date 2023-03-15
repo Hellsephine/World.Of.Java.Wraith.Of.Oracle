@@ -4,22 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01944787-e1a1-49e5-9937-4625369e0436" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/world/Combattant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/world/ICombattants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monstre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/world_of_java/world/Personnage.java" afterDir="false" />
+    <list default="true" id="01944787-e1a1-49e5-9937-4625369e0436" name="Changes" comment="Ajout du projet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Combat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/actions/Sleep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/actions/Sleep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/ArmeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/ArmeFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/BouclierFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/BouclierFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/MonstreFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/MonstreFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/NourritureFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/NourritureFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/factory/PersonnageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/factory/PersonnageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/map/Coordonnes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/map/Coordonnes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Armes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Armes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Bouclier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Bouclier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Nourriture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Nourriture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/objets/Sac.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/objets/Sac.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Combattant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Combattant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Equipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/ICombattants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/ICombattants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Monde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Monstre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Monstre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Personnage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Personnage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/world_of_java/world/Point2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/world/of/java/world/Point2D.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +112,16 @@
       <updated>1673531185801</updated>
       <workItem from="1673531187109" duration="19900000" />
       <workItem from="1674834863098" duration="117000" />
-      <workItem from="1678697763521" duration="43412000" />
+      <workItem from="1678697763521" duration="54464000" />
     </task>
+    <task id="LOCAL-00001" summary="Ajout du projet">
+      <created>1678883939980</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678883939980</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,5 +137,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ajout du projet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout du projet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/world/of/java/actions/Move.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

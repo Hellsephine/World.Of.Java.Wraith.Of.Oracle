@@ -1,4 +1,4 @@
-package world_of_java.world;
+package world.of.java.world;
 
 public class Point2D {
 

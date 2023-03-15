@@ -1,14 +1,15 @@
-package world_of_java.world;
+package world.of.java.world;
 
-import world_of_java.factory.ArmeFactory;
-import world_of_java.factory.BouclierFactory;
-import world_of_java.factory.NourritureFactory;
+import world.of.java.factory.NourritureFactory;
+import world.of.java.factory.ArmeFactory;
+import world.of.java.factory.BouclierFactory;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class Equipe {
+public class Equipe implements Iterable<ICombattants> {
     private List<ICombattants> tab;
     public Equipe(){
         this.tab = new ArrayList<>();
@@ -39,5 +40,27 @@ public class Equipe {
                 e.getSac().addItems(NourritureFactory.buildNourriture());
             }
         }
+    }
+
+    public ICombattants get(int index){
+        return tab.get(index);
+    }
+    public int size(){
+        return tab.size();
+    }
+
+    @Override
+    public Iterator<ICombattants> iterator() {
+        return tab.iterator();
+    }
+
+    public boolean isAlive(){
+        boolean alive = false;
+        for (ICombattants e: tab) {
+            if(e.getPointDeVie() <= 0) {
+                alive = true;
+            }
+        }
+        return alive;
     }
 }
