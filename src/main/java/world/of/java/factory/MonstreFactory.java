@@ -1,6 +1,7 @@
 package world.of.java.factory;
 
 import world.of.java.map.Coordonnes;
+import world.of.java.map.Map;
 import world.of.java.world.Monstre;
 
 import java.util.Random;
@@ -17,11 +18,11 @@ public class MonstreFactory {
                 +monstreNom[new Random().nextInt(monstreNom.length)];
         Integer force = new Random().nextInt(5,11);
         Integer pdv = new Random().nextInt(50,101);
-        int xRandom = new Random().nextInt(0,10);
-        int yRandom = new Random().nextInt(0,10);
+        int xRandom = new Random().nextInt(0,Map.MAX_X);
+        int yRandom = new Random().nextInt(0,Map.MAX_Y);
         Coordonnes coordonne = new Coordonnes(xRandom, yRandom);
 
-        return new Monstre(pdv,nom,force, 100,pdv, coordonne);
+        return new Monstre(pdv,nom,force, 1000,pdv, coordonne);
 
         // Monstre monstre = new Monstre(pdv,nom,force, 100,pdv, coordonne);
         // return monstre;

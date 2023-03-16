@@ -1,6 +1,7 @@
 package world.of.java.factory;
 
 import world.of.java.map.Coordonnes;
+import world.of.java.map.Map;
 import world.of.java.world.Personnage;
 
 import java.util.Random;
@@ -16,11 +17,11 @@ public class PersonnageFactory {
         String nom = heroNom[new Random().nextInt(heroNom.length)];
         Integer force = new Random().nextInt(5,11);
         Integer pdv = new Random().nextInt(50,101);
-        int xRandom = new Random().nextInt(0,10);
-        int yRandom = new Random().nextInt(0,10);
+        int xRandom = new Random().nextInt(0,Map.MAX_X);
+        int yRandom = new Random().nextInt(0,Map.MAX_Y);
         Coordonnes coordonne = new Coordonnes(xRandom, yRandom);
 
-        return new Personnage(pdv,nom,force, 100,pdv, coordonne);
+        return new Personnage(pdv,nom,force, 1000,pdv, coordonne);
 
         // Personnage personnage = new Personnage(pdv,nom,force, 100,pdv, coordonne);
         // return personnage;
