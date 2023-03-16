@@ -20,12 +20,14 @@ public class Action {
         switch (choixEffectuer) {
             case SLEEP:
                 Sleep.heal(combattants);
+                System.out.println(combattants.getNom()+" dort !");
                 break;
             case MOVE:
                 Move.deplacement(combattants,map);
+                System.out.println(combattants.getNom()+" ce deplace ");
                 break;
             case NOTHING:
-                System.out.println("Rien ne ce passe.");
+                System.out.println(combattants.getNom()+" ne fait rien");
                 break;
         }
     }
