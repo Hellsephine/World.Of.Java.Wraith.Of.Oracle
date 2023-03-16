@@ -22,7 +22,7 @@ public class Combat {
                     hero.manger();
                     gagnant(hero, monster);
                 } else { // Si Héros Attaque
-                    attaqueHeros(hero,monster);
+                    attaque(hero,monster);
                 }
                 // Si tour Monstre
             } else {
@@ -30,7 +30,7 @@ public class Combat {
                     monster.manger();
                     gagnant(hero, monster);
                 } else { // Si Monstres Attaque
-                    attaqueMonstres(monster,hero);
+                    attaque(monster,hero);
                 }
             }
         }
@@ -59,27 +59,20 @@ public class Combat {
      * @param hero
      * @param monster
      */
-    private static void attaqueHeros(ICombattants hero, ICombattants monster){
-        hero.attaquer(monster);
-        hero.perdreEnduranceAttaque();
-        monster.perdreEnduranceDefence();
-        System.out.println(hero.getNom() + " inflige " + hero.getArmes().getDegat() + " a " + monster.getNom());
-        System.out.println("Il lui reste " + monster.getPointDeVie() + " point de vie");
-        gagnant(hero, monster);
+    private static void attaque(ICombattants combattants1, ICombattants combattants2){
+        combattants1.attaquer(combattants2);
+        perdreEndurance(combattants1,combattants2);
+        System.out.println(combattants1.getNom() + " inflige " + combattants1.getArmes().getDegat() + " a " + combattants2.getNom());
+        System.out.println("Il lui reste " + combattants2.getPointDeVie() + " point de vie");
+        gagnant(combattants1, combattants2);
     }
-
+    
     /**
-     * Methode qui permet au monstre de lancer une attaque 
-     * Mets a jour l'endurance perdue chez les 2 équipe
-     * @param hero
-     * @param monster
+     * Fait perdre de l'endurance au combattant
+     * 
      */
-    private static void attaqueMonstres(ICombattants hero, ICombattants monster){
-        monster.attaquer(hero);
-        monster.perdreEnduranceAttaque();
-        hero.perdreEnduranceDefence();
-        System.out.println(monster.getNom() + " vous inflige " + monster.getArmes().getDegat());
-        System.out.println("Il vous reste " + hero.getPointDeVie() + " point de vie");
-        gagnant(hero, monster);
+    public static void perdreEndurance(ICombattants combattants1, ICombattants combattants2){
+        combattants1.setEndurance(combattants1.getEndurance() - ((combattants1.getArmes().getLongueur()*combattants1.getArmes().getPoids())/(1000*combattants1.getForce())));
+        combattants2.setEndurance(combattants2.getEndurance() - (combattants2.getArmes().getPoids()/(100*combattants2.getForce())));
     }
 }

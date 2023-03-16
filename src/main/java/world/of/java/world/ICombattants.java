@@ -28,8 +28,6 @@ public interface ICombattants {
     public Sac getSac();
     public void attaquer(ICombattants adversaire);
     public void manger();
-    public void perdreEnduranceAttaque();
-    public void perdreEnduranceDefence();
     public Coordonnes getCoordonnes();
     public void setCoordonnes(Coordonnes coordonnes);
 

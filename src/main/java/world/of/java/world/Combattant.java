@@ -101,20 +101,4 @@ public abstract class Combattant implements ICombattants {
             }
         }
     }
-
-    /**
-     * Fait perdre de l'endurance au combattant qui lance l'attaque
-     */
-    public void perdreEnduranceAttaque(){
-        setEndurance(getEndurance() - ((getArmes().getLongueur()*getArmes().getPoids())/(1000*getForce())));
-    }
-
-    /**
-     * Fait perdre de l'endurance au combattant qui subit l'attaque
-     */
-    public void perdreEnduranceDefence(){
-        setEndurance(getEndurance() - (getArmes().getPoids()/(100*getForce())));
-    }
-
-
 }
