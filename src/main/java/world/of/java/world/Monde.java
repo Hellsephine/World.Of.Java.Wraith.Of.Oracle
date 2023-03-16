@@ -65,24 +65,25 @@ public class Monde {
      * @return un boolean pour savoir si l'équipe est en vie ou non
      */
     public boolean demarrer() {
-        for (ICombattants h: heros) {
+        boolean etat = true;
+        try {
             if (heros.chooseFighter().getCoordonnes().equals(monstres.chooseFighter().getCoordonnes())){
                 Combat.combat(heros.chooseFighter(), monstres.chooseFighter());
             }else {
                 Action.executeAction(heros.chooseFighter(),map);
             }
-            heros.isAlive();
-        }
-        for (ICombattants m: monstres) {
+        etat = heros.isDead();
             if (monstres.chooseFighter().getCoordonnes().equals(heros.chooseFighter().getCoordonnes())){
                 Combat.combat(monstres.chooseFighter(), heros.chooseFighter());
             }else {
                 Action.executeAction(monstres.chooseFighter(),map);
             }
-            monstres.isAlive();
+        etat = monstres.isDead();
+        return !etat;
+        } catch (Exception e) {
+            return true;
         }
-
-        return true;
+            
     }
 
 }
