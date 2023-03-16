@@ -14,25 +14,32 @@ public class Equipe implements Iterable<ICombattants> {
     public Equipe(){
         this.tab = new ArrayList<>();
     }
+
+    // Permet d'ajouter un combattant a une équipe
     public void addFighter(ICombattants pCombattants ){
         tab.add(pCombattants);
     }
 
+    // Permet d'ajouter une arme a un combattant en parcourant l'équipe
     public void addArmes(){
         for (ICombattants e: tab) {
             e.setArmes(ArmeFactory.build());
         }
     }
+
+     // Permet d'ajouter un bouclier a un combattant en parcourant l'équipe
     public void addBouclier(){
         for (ICombattants e: tab) {
             e.setBouclier(BouclierFactory.build());
         }
     }
 
+    // Permet de recupere le 1er commbattant de l'équipe , celui a l'index 0
     public ICombattants chooseFighter(){
         return tab.get(0);
     }
 
+    // Permet d'ajouter de la nourriture dans l'inventaire des équipe de combattant
     public void addNourritures(int numberNourriture){
         int rand = new Random().nextInt(numberNourriture);
         for(int i = 0; i < rand; i++) {

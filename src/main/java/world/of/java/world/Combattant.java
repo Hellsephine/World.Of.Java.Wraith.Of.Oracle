@@ -79,11 +79,19 @@ public abstract class Combattant implements ICombattants {
     }
 
 
+    /**
+     * Permet de recupere les degat de l'attaque de l'arme
+     */
     @Override
     public void attaquer(ICombattants adversaire) {
 
         adversaire.defendre(this.getArmes().getDegat());
     }
+    /**
+     * Permet de modifier les point de vie
+     * quand on subit une attaque
+     * 
+     */
     @Override
     public void defendre(int degat) {
 

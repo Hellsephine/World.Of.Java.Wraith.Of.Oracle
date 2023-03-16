@@ -4,6 +4,10 @@ import world.of.java.map.Coordonnes;
 import world.of.java.objets.Armes;
 import world.of.java.objets.Bouclier;
 
+/**
+ * Permet de créer une instance de Personnage
+ * nécessisant Des pdv, nom, force, endurance , coordonnées
+ */
 public class Personnage extends Combattant {
 
     private Armes armes;

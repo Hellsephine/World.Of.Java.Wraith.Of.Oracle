@@ -5,6 +5,10 @@ import world.of.java.objets.Armes;
 import world.of.java.objets.Sac;
 import world.of.java.objets.Bouclier;
 
+/**
+ * Interface qui contient tous les getter et setter que les 
+ * combattant vont avoir besoin pour exister
+ */
 public interface ICombattants {
 
     public String getNom();

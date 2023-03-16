@@ -24,7 +24,11 @@ public class Monde {
         MOVE,SLEEP,NOTHING
     }
 
-
+    /**
+     * Methode qui regroupe les différent objet
+     * a instancier et a regroupe dans les
+     * sac et & equipe respective
+     */
     public void lancementJeu() {
 
         // Création des Heros & Monstres et ajout aux équipe spécifique
@@ -56,6 +60,10 @@ public class Monde {
 
     }
 
+    /**
+     * Methode qui boucle sur l'équipe des héros et des monstres pour execute les combat ou les action
+     * @return un boolean pour savoir si l'équipe est en vie ou non
+     */
     public boolean demarrer() {
         for (ICombattants h: heros) {
             if (heros.chooseFighter().getCoordonnes().equals(monstres.chooseFighter().getCoordonnes())){

@@ -2,6 +2,10 @@ package world.of.java.map;
 
 import java.util.Objects;
 
+/*
+ * Permet de donner des Coordonnes
+ * X et Y a un personnage
+ */
 public class Coordonnes {
 
     private int x;

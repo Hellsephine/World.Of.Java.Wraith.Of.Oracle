@@ -21,4 +21,12 @@ public class Nourriture implements Items {
         this.poids = poids;
         this.endurance = endurance;
     }
+    @Override
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+    @Override
+    public void setPoids(Integer poids) {
+       this.poids = poids;
+    }
 }

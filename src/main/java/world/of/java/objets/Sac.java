@@ -3,6 +3,9 @@ package world.of.java.objets;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Permet de créer des Sac/Inventaire pour y stocker des Equipement
+ */
 public class Sac {
 
     private List<Items> tab;

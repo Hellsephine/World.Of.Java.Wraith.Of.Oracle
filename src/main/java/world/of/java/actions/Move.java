@@ -11,6 +11,14 @@ public class Move {
        NORD,SUD,EST,OUEST
     }
 
+
+    /**
+     * Permet de choisir une direction au hasard 
+     * Puis effectue un deplacement selon la direction
+     * Enfin mes a jour la Map pour afficher les positions des Combattants
+     * @param combattants
+     * @param map
+     */
     public static void deplacement(ICombattants combattants, Map map){
         directions[] direction = directions.values();
         int rand = new Random().nextInt(direction.length);
@@ -54,6 +62,7 @@ public class Move {
 
         }
         map.updatePosition(position);
+        map.afficherMap();
     }
 }
 
