@@ -17,8 +17,11 @@ public class Main {
         System.out.println("Le monde est créée");
         System.out.println("Lancement des combats");
         boolean condition = true;
-        while(condition){
+        int index = 0;
+        while(condition && index <= 500){
+            System.out.println("nb tour"+ index);
             condition = m.demarrer();
+            index++;
         }
     }
 
