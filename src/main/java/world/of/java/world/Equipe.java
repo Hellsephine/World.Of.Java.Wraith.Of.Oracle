@@ -9,6 +9,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
+import javax.management.RuntimeErrorException;
+
 public class Equipe implements Iterable<ICombattants> {
     private List<ICombattants> tab;
     public Equipe(){
@@ -36,7 +38,13 @@ public class Equipe implements Iterable<ICombattants> {
 
     // Permet de recupere le 1er commbattant de l'équipe , celui a l'index 0
     public ICombattants chooseFighter(){
-        return tab.get(0);
+        if (tab.size() == 0){
+            throw new RuntimeException("L'équipe est vide !");
+        }else{
+            int rand = new Random().nextInt(tab.size());
+            return tab.get(rand); 
+        }
+        
     }
 
     // Permet d'ajouter de la nourriture dans l'inventaire des équipe de combattant
@@ -61,13 +69,18 @@ public class Equipe implements Iterable<ICombattants> {
         return tab.iterator();
     }
 
-    public boolean isAlive(){
-        boolean alive = false;
-        for (ICombattants e: tab) {
-            if(e.getPointDeVie() <= 0) {
-                alive = true;
+    public boolean isDead(){
+        boolean resulat = true;
+        Iterator<ICombattants> iter = iterator();
+        while(iter.hasNext()){
+            ICombattants e = iter.next();
+            if(e.getPointDeVie() > 0) {
+                resulat = false ;
+            } else {
+                iter.remove();
+                System.out.println(e.getNom()+" est mort !");
             }
         }
-        return alive;
+        return resulat;
     }
 }
