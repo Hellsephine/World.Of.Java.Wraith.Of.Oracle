@@ -2,7 +2,6 @@ package world.of.java.world;
 
 import world.of.java.actions.Action;
 import world.of.java.actions.Combat;
-import world.of.java.factory.BouclierFactory;
 import world.of.java.map.Map;
 import world.of.java.factory.MonstreFactory;
 import world.of.java.factory.PersonnageFactory;

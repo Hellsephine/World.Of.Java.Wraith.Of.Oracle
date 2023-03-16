@@ -9,8 +9,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-import javax.management.RuntimeErrorException;
-
 public class Equipe implements Iterable<ICombattants> {
     private List<ICombattants> tab;
     public Equipe(){

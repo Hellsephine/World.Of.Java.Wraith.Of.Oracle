@@ -27,7 +27,6 @@ public interface ICombattants {
     public void setBouclier(Bouclier bouclier);
     public Sac getSac();
     public void attaquer(ICombattants adversaire);
-    public  void defendre(int degat);
     public void manger();
     public void perdreEnduranceAttaque();
     public void perdreEnduranceDefence();
