@@ -67,6 +67,10 @@ public class Equipe implements Iterable<ICombattants> {
         return tab.iterator();
     }
 
+    /**
+     * Utilise un iterateur pour parcourir la liste de personnages/monstres et savoir si il sont mort
+     * @return 
+     */
     public boolean isDead(){
         boolean resulat = true;
         Iterator<ICombattants> iter = iterator();

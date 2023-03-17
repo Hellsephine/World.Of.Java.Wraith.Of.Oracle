@@ -65,6 +65,7 @@ public class Monde {
      */
     public boolean demarrer() {
         boolean etat = true;
+        System.out.println(heros.size()+" "+monstres.size());
         try {
             if (heros.chooseFighter().getCoordonnes().equals(monstres.chooseFighter().getCoordonnes())){
                 Combat.combat(heros.chooseFighter(), monstres.chooseFighter());
@@ -82,7 +83,19 @@ public class Monde {
         } catch (Exception e) {
             return true;
         }
-            
     }
 
+    /**
+     * Essayer pour retourner la team qui gagne
+     * @return
+     */
+    public void teamWinner(){
+       if (heros.size() == 0){
+            System.out.println("Les monstres on gagné !");
+       }else if (monstres.size() == 0) {
+            System.out.println("Les héros on gagné !");
+        }else{
+            System.out.println("No one win.");
+        }
+    }
 }

@@ -23,6 +23,8 @@ public class Main {
             condition = m.demarrer();
             index++;
         }
+        m.teamWinner();
+        
     }
 
 }

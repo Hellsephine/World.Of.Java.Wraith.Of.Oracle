@@ -6,8 +6,8 @@ public class Map {
 
     public static char VALEUR_CASE_VIDE = '#';
     public static char VALEUR_PERSONNAGE = '@';
-    public final static int MAX_X = 5; 
-    public final static int MAX_Y = 5; 
+    public final static int MAX_X = 4; 
+    public final static int MAX_Y = 4; 
     private final char[][] map = new char[MAX_X][MAX_Y];
     public void create(){
 
