@@ -81,6 +81,7 @@ public abstract class Combattant implements ICombattants {
 
     /**
      * Permet de recupere les degat de l'attaque de l'arme
+     * et d'infliger une perte de point de vie a l'adversaire
      */
     @Override
     public void attaquer(ICombattants adversaire) {
